@@ -1,0 +1,224 @@
+﻿:root{--ink:#10201d;--paper:#f4f3ec;--muted:#65716c;--line:#d9ddd4;--lime:#b5ec60;--mint:#e7efdc;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}.wrap{width:min(1280px,calc(100% - 88px));margin:auto}
+    .hero{background:var(--ink);color:var(--paper);padding:24px 0 64px;min-height:680px;display:flex;align-items:center}.hero-inner{width:min(1280px,calc(100% - 88px));margin:auto}.topline{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#c1cac4}.topline .mark{color:var(--lime);font-weight:700}.hero-title{font-size:clamp(76px,13.8vw,190px);line-height:.78;letter-spacing:-.09em;margin:105px 0 44px;font-weight:600}.hero-title span{display:block}.hero-title .accent{color:var(--lime);font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.07em;margin-top:20px}.hero-bottom{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}.hero-copy{max-width:760px;font-size:clamp(17px,2vw,22px);line-height:1.6;color:#d2d9d4;margin:0}.hero-aside{font-size:12px;letter-spacing:.12em;color:var(--lime);text-transform:uppercase;white-space:nowrap}
+    .intro{padding:110px 0 120px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:start}.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;margin:0 0 25px}.intro h2{font-size:clamp(40px,6vw,76px);line-height:.99;letter-spacing:-.065em;margin:0;max-width:620px}.intro h2 span{font-family:var(--serif);font-weight:400;font-style:italic;color:#7b9b60}.intro-text{font-family:var(--serif);font-size:clamp(21px,2.5vw,31px);line-height:1.45;margin:58px 0 0;max-width:600px}.intro-text em{font-style:normal;color:#6d8960}
+    .note{background:#efeee7;padding:62px 0}.note p{max-width:840px;margin:0 auto;font-size:clamp(17px,2vw,21px);line-height:1.65;color:#68746e}
+    .experience{background:#e9ede5;padding:98px 0 110px}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:end;margin-bottom:48px}.section-head h2{font-size:clamp(48px,7vw,82px);line-height:.96;letter-spacing:-.07em;margin:0;max-width:620px}.section-head .eyebrow{grid-column:1/-1;margin-bottom:-28px}.section-head p{font-size:19px;line-height:1.6;color:var(--muted);margin:0 0 6px;max-width:560px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:var(--paper);border:1px solid var(--line);padding:34px;min-height:275px;display:flex;flex-direction:column;justify-content:space-between}.card-top{display:flex;justify-content:space-between;gap:18px;align-items:start}.card h3{font-size:23px;letter-spacing:-.035em;margin:0 0 8px}.company{font-size:14px;font-weight:700;color:#607e53}.date{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:8px 12px;white-space:nowrap}.card p{font-size:16px;line-height:1.65;color:#69736d;max-width:620px;margin:24px 0}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{background:var(--mint);font-size:12px;padding:9px 11px;color:#53694a}
+    .profile{background:var(--ink);color:var(--paper);padding:92px 0 82px}.profile-head{display:flex;align-items:center;gap:28px;margin-bottom:34px}.portrait{height:104px;width:104px;border-radius:50%;background:var(--paper);color:var(--ink);display:grid;place-items:center;font-family:var(--serif);font-size:31px;border:1px solid #d5d9d2;flex:0 0 auto}.profile h2{font-family:var(--serif);font-size:clamp(40px,6vw,66px);font-weight:400;margin:0;letter-spacing:-.025em}.profile-copy{font-size:clamp(16px,1.7vw,20px);line-height:1.65;color:#d0d8d2;margin:0;max-width:1020px}.contact{display:flex;flex-wrap:wrap;gap:24px;margin-top:34px}.contact a{display:inline-flex;gap:11px;align-items:center;padding:0 0 8px;text-decoration:none;border-bottom:1px solid #718b76;font-size:17px}.contact a:hover{color:var(--lime);border-color:var(--lime)}.contact svg{width:17px;height:17px;color:#a6dcb1}.footer{background:var(--ink);color:#829089;padding:0 0 24px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.footer .wrap{border-top:1px solid #34443d;padding-top:18px;display:flex;justify-content:space-between}
+    @media(max-width:700px){.wrap,.hero-inner{width:calc(100% - 40px)}.hero{min-height:650px;padding:23px 0 48px}.hero-title{font-size:clamp(70px,18vw,120px);margin:100px 0 36px;letter-spacing:-.085em}.hero-bottom{grid-template-columns:1fr;gap:24px}.hero-aside{font-size:10px}.intro{padding:75px 0 82px}.intro-grid{grid-template-columns:1fr;gap:0}.intro-text{margin-top:35px}.note{padding:43px 0}.experience{padding:72px 0}.section-head{grid-template-columns:1fr;gap:22px;margin-bottom:32px}.section-head .eyebrow{grid-column:auto;margin:0 0 -7px}.section-head p{font-size:17px}.cards{grid-template-columns:1fr}.card{padding:25px;min-height:255px}.card-top{flex-direction:column-reverse;gap:14px}.date{align-self:flex-start}.profile{padding:68px 0 54px}.profile-head{gap:18px}.portrait{width:75px;height:75px;font-size:24px}.profile-copy{font-size:16px}.contact{gap:18px;flex-direction:column;align-items:flex-start}.contact a{font-size:15px}.footer .wrap{gap:14px;flex-direction:column}}
+
+
+/* Küçük ekranlarda başlıkların ve üst menünün taşmasını önler. */
+@media (max-width: 700px) {
+  .topline {
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    letter-spacing: .09em;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 15vw, 105px);
+    line-height: .88;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-title .accent {
+    margin-top: 12px;
+  }
+
+  .intro h2,
+  .section-head h2 {
+    overflow-wrap: anywhere;
+  }
+
+  .profile h2 {
+    font-size: clamp(32px, 8vw, 52px);
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrap,
+  .hero-inner {
+    width: calc(100% - 32px);
+  }
+
+  .topline {
+    font-size: 10px;
+  }
+
+  .hero-title {
+    font-size: clamp(48px, 14.2vw, 58px);
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* İletişim ikonları */
+.contact a {
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+  padding: 0 0 9px;
+}
+
+.contact svg {
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  border: 1px solid #53675d;
+  border-radius: 50%;
+  color: #b5ec60;
+  flex: 0 0 16px;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.contact a:hover svg {
+  color: #10201d;
+  background: #b5ec60;
+  border-color: #b5ec60;
+}
+
+@media (max-width: 700px) {
+  .contact a {
+    min-height: 42px;
+  }
+}
+
+/* Profil portresi: kırpmayı koruyarak her ekrana uyum sağlar. */
+.portrait {
+  object-fit: cover;
+  object-position: center 34%;
+  display: block;
+}
+
+/* Deneyim kartı üzerine gelindiğinde renk değişimi */
+.card {
+  transition: background-color .22s ease, border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+
+.card:hover {
+  background-color: #e2edcf;
+  border-color: #b5ca9c;
+  box-shadow: 0 12px 28px rgb(16 32 29 / 8%);
+  transform: translateY(-3px);
+}
+
+.card:hover .tag {
+  background-color: #f2f6e9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}
+
+/* LinkedIn ikonu diğer iletişim ikonlarıyla aynı hover görünümünü kullanır. */
+
+
+/* Eğitim bilgileri */
+.education-list {
+  display: grid;
+  gap: 22px;
+}
+
+.education-list > .eyebrow {
+  margin: 0 0 2px;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.education-level {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.education-item h2 {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.education-year {
+  padding-top: 20px;
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* DEÜ logosu eğitim listesinin arka planında hafif filigran olarak kullanılır. */
+.education-list {
+  position: relative;
+  isolation: isolate;
+}
+
+.education-list::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(76%, 300px);
+  aspect-ratio: 1;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  background: url("deu-logo.png") center / contain no-repeat;
+  opacity: .10;
+  filter: grayscale(1);
+  pointer-events: none;
+}
+
+.education-list > * {
+  position: relative;
+}
+
+
+
+/* İsim başlığı geniş ve dar ekranlarda alana sığacak ölçüde ölçeklenir. */
+.hero-title {
+  font-size: clamp(54px, 9vw, 150px);
+  overflow-wrap: normal;
+}
+
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: clamp(48px, 11vw, 78px);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: clamp(42px, 11.5vw, 48px);
+  }
+}
+
+.topline {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .topline {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .topline {
+    font-size: 12px;
+  }
+}
