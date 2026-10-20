@@ -139,6 +139,11 @@
   border-bottom: 1px solid var(--line);
 }
 
+.education-item > div {
+  flex: 1;
+  min-width: 0;
+}
+
 .education-level {
   display: block;
   margin-bottom: 8px;
@@ -153,6 +158,15 @@
   font-size: clamp(24px, 3vw, 38px);
   line-height: 1.08;
   letter-spacing: -.045em;
+}
+
+.education-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-top: 8px;
+  color: #000;
+  font-size: 14px;
 }
 
 .education-year {
