@@ -176,30 +176,39 @@
   white-space: nowrap;
 }
 
-/* DEÜ logosu eğitim listesinin arka planında hafif filigran olarak kullanılır. */
-.education-list {
+/* Üniversite logoları her bir eğitim satırında ayrı filigran olarak kullanılır. */
+.education-item-anadolu,
+.education-item-deu {
   position: relative;
   isolation: isolate;
 }
 
-.education-list::before {
+.education-item-anadolu::before,
+.education-item-deu::before {
   content: "";
   position: absolute;
   z-index: -1;
-  width: min(76%, 300px);
-  aspect-ratio: 1;
-  left: 50%;
-  top: 54%;
-  transform: translate(-50%, -50%);
-  background: url("deu-logo.png") center / contain no-repeat;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   opacity: .10;
   filter: grayscale(1);
   pointer-events: none;
 }
 
+.education-item-anadolu::before {
+  background-image: url("anadolu-logo.png");
+}
+
+.education-item-deu::before {
+  background-image: url("deu-logo.png");
+}
+
 .education-list > * {
   position: relative;
 }
+
 
 
 
